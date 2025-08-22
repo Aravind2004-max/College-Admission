@@ -1,0 +1,59 @@
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.2); 
+    -fx-background-radius: 20;
+    -fx-border-radius: 3;
+    -fx-border-color: rgba(255, 255, 255, 0.4);
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.3), 10, 0.1, 0, 0);
+    //-fx-backdrop-filter: blur(10px); 
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-cell {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: black; 
+    -fx-font-size: 14px;
+    -fx-background-color: transparent;
+    -fx-padding: 0;//5 10 5 10;
+    -fx-pref-tile-width: 154;
+}
+
+/* Optional: Header styling */
+.table-view .column-header-background {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+/* Make each row glossy/transparent like the TableView */
+.table-row-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.15); /* Slight transparent white */
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.15), 6, 0.1, 0, 0);
+    -fx-cell-size: 50px;
+}
+
+/* Row hover effect */
+.table-row-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Optional: selected row */
+.table-row-cell:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.35);
+    -fx-text-fill: black;
+}
+
+

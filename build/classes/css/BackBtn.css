@@ -1,0 +1,21 @@
+#backBtn.back {
+    -fx-background-color: rgba(255, 255, 255, 0.25);  /* Light transparent white */
+    -fx-border-color: black;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-padding: 8 24;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.3, 0, 2);
+}
+
+#backBtn.back:hover {
+    -fx-background-color: black;              /* ✅ Button turns black inside */
+    -fx-text-fill: white;                     /* ✅ Text becomes white */
+    -fx-font-weight: bold;
+    -fx-border-color: white;                  /* ✅ Border turns white */
+    -fx-effect: dropshadow(gaussian, black, 10, 0.5, 0, 0);  /* ✅ Black glow */
+}

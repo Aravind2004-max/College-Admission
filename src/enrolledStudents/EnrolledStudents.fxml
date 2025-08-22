@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enrolledStudents.EnrolledStudentsController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1942.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/enrolledStds.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="glassPane" layoutX="558.0" layoutY="157.0" prefHeight="782.0" prefWidth="773.0" styleClass="glass-pane" stylesheets="@../css/Registration.css">
+         <children>
+            <TableView fx:id="stdDetails" layoutX="271.0" layoutY="36.0" prefHeight="709.0" prefWidth="460.0" stylesheets="@../css/enrolledCss.css">
+              <columns>
+                <TableColumn fx:id="details" prefWidth="459.0" text="Student Details">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="this" />
+                    </cellValueFactory>
+                </TableColumn> 
+              </columns>
+            </TableView>
+            <TextField fx:id="rollNo" layoutX="34.0" layoutY="42.0" />
+            <Text layoutX="83.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll Number">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="100.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Roll No :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="135.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="104.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="81.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid Amount :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="148.0" layoutY="82.0" mnemonicParsing="false" onAction="#searcher" text="Submit">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="notFound" layoutX="415.0" layoutY="373.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="invalidRno" layoutX="36.0" layoutY="75.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="backBtn" layoutX="1204.0" layoutY="110.0" mnemonicParsing="false" onAction="#backToHome" styleClass="back" stylesheets="@../css/BackBtn.css" text="Back" />
+   </children>
+</AnchorPane>

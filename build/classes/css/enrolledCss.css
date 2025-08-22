@@ -1,0 +1,19 @@
+.table-row-cell {
+    -fx-padding: 10px;         /* adds spacing inside row */
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-color: transparent transparent #ddd transparent;
+    -fx-border-width: 0 0 1 0;
+}
+.table-cell {
+    -fx-padding: 5px 10px;     /* vertical and horizontal padding */
+    -fx-font-size: 14px;
+}
+
+
+.table-cell {
+    -fx-font-size: 18px;        /* 🔺 Increase font size */
+    -fx-font-weight: bold;      /* 🔳 Optional: Make bold */
+    -fx-padding: 12px 16px;     /* 🧱 More padding for clean look */
+    -fx-text-alignment: left;   /* ↔ Align text to left */
+}
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="collegeregistry.FXMLDocumentController">
+    <children>
+      <ImageView fx:id="image" fitHeight="1175.0" fitWidth="1954.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/homePage.jpg" />
+         </image>
+      </ImageView>
+    <AnchorPane fx:id="glassPane" layoutX="744.0" layoutY="182.0" prefHeight="443.0" prefWidth="393.0" styleClass="glass-pane" stylesheets="@../css/InnerAnchorPane.css">
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </AnchorPane>
+        <Button fx:id="courses" layoutX="792.0" layoutY="269.0" onAction="#courses" prefHeight="31.0" prefWidth="300.0" stylesheets="@../css/HomeButtons.css" text="Available Courses">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="registry" layoutX="790.0" layoutY="344.0" mnemonicParsing="false" onAction="#registration" prefHeight="31.0" prefWidth="300.0" stylesheets="@../css/HomeButtons.css" text="Registration">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="enrollment" layoutX="789.0" layoutY="419.0" mnemonicParsing="false" onAction="#enrolledStudents" prefHeight="31.0" prefWidth="300.0" stylesheets="@../css/HomeButtons.css" text="Enrolled Students">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutUs" layoutX="788.0" layoutY="499.0" mnemonicParsing="false" onAction="#aboutUs" prefHeight="31.0" prefWidth="300.0" stylesheets="@../css/HomeButtons.css" text="About Us">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Text fill="#f2f2f2" layoutX="1192.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Education is a passport to the future,for tomorrow belongs to who prepare it from TODAY!!" wrappingWidth="461.984375">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="banner" blendMode="SCREEN" layoutY="-2.0" prefHeight="67.0" prefWidth="1920.0" styleClass="bannerPane" stylesheets="@../css/HomepageTxtField.css">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="150.0" layoutX="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fff6f6" layoutX="194.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wakanda University">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

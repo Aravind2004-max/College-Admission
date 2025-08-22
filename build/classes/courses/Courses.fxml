@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="courseAnchor" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courses.CoursesController">
+   <children>
+      <ImageView fitHeight="1151.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/coursesBg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="courseLable" layoutX="825.0" layoutY="31.0" text="Our Courses" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <TableView fx:id="courseTable" layoutX="606.0" layoutY="206.0" prefHeight="668.0" prefWidth="709.0" stylesheets="@../css/TableCss.css">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="151.0" text="Course Id">
+            <cellValueFactory>
+               <PropertyValueFactory property="id" />  
+            </cellValueFactory>   
+          </TableColumn>
+          <TableColumn fx:id="course" minWidth="0.0" prefWidth="250.0" text="Course">
+               <cellValueFactory>
+               <PropertyValueFactory property="course" />  
+            </cellValueFactory>   
+          </TableColumn>
+            <TableColumn fx:id="avail" minWidth="0.0" prefWidth="151.0" styleClass="available" text="Availability">
+                 <cellValueFactory>
+               <PropertyValueFactory property="availablity" />  
+            </cellValueFactory>   
+            </TableColumn>
+            <TableColumn fx:id="fee" prefWidth="151.0" text="Fee">
+            <cellValueFactory>
+               <PropertyValueFactory property="fee" />  
+            </cellValueFactory>   
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="1194.0" layoutY="160.0" mnemonicParsing="false" onAction="#backToHome" styleClass="back" stylesheets="@../css/BackBtn.css" text="Back" />
+   </children>
+</AnchorPane>

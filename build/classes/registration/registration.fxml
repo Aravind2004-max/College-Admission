@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="registration.RegistrationController">
+   <children>
+      <ImageView fx:id="img" fitHeight="1111.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/register.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="glassPane" layoutX="578.0" layoutY="70.0" prefHeight="894.0" prefWidth="765.0" styleClass="glass-pane" stylesheets="@../css/Registration.css">
+         <children>
+            <TextField fx:id="name" layoutX="13.0" layoutY="74.0" prefHeight="31.0" prefWidth="307.0" promptText="Name " />
+            <RadioButton fx:id="male" layoutX="52.0" layoutY="244.0" mnemonicParsing="false" onAction="#male" prefHeight="21.0" prefWidth="84.0" text="Male" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="female" layoutX="52.0" layoutY="276.0" mnemonicParsing="false" onAction="#female" prefHeight="21.0" prefWidth="84.0" text="Female" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="other" layoutX="53.0" layoutY="306.0" mnemonicParsing="false" onAction="#others" text="Prefered not to say" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="age" layoutX="13.0" layoutY="158.0" prefHeight="31.0" prefWidth="307.0" promptText="age" />
+            <ComboBox fx:id="com1" layoutX="29.0" layoutY="372.0" prefWidth="150.0" />
+            <Text layoutX="18.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="18.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="13.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="fo" layoutX="429.0" layoutY="74.0" prefHeight="31.0" prefWidth="307.0" promptText="Enter here" />
+            <TextField fx:id="fName" layoutX="8.0" layoutY="747.0" prefHeight="31.0" prefWidth="307.0" promptText="Enter here" />
+            <Text layoutX="13.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HSC :">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="com2" layoutX="26.0" layoutY="554.0" prefWidth="150.0" />
+            <TextField fx:id="mName" layoutX="8.0" layoutY="820.0" prefHeight="31.0" prefWidth="307.0" promptText="Enter here" />
+            <TextField fx:id="mark2" layoutX="26.0" layoutY="659.0" prefHeight="31.0" prefWidth="307.0" promptText="Mark">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></TextField>
+            <Text layoutX="12.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SSLC :">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="sName1" layoutX="29.0" layoutY="416.0" prefHeight="31.0" prefWidth="307.0" promptText="School Name">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></TextField>
+            <Text layoutX="12.0" layoutY="741.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Father's Name ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="mark1" layoutX="29.0" layoutY="477.0" prefHeight="31.0" prefWidth="307.0" promptText="Mark">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></TextField>
+            <Text layoutX="11.0" layoutY="814.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mother's Name ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="sName2" layoutX="26.0" layoutY="598.0" prefHeight="31.0" prefWidth="307.0" promptText="School Name">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></TextField>
+            <Text layoutX="432.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Father's Occupation">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="431.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mother's Occupation">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="mo" layoutX="429.0" layoutY="158.0" prefHeight="31.0" prefWidth="307.0" promptText="Enter here" />
+            <Text layoutX="428.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="addr" layoutX="423.0" layoutY="238.0" prefHeight="170.0" prefWidth="307.0" />
+            <Button fx:id="sub" layoutX="534.0" layoutY="417.0" mnemonicParsing="false" onAction="#submit" text="Submit">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="status" layoutX="449.0" layoutY="484.0" textFill="#eb0202">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="status2" layoutX="485.0" layoutY="482.0" textFill="#096f13">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="marks" layoutX="34.0" layoutY="456.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="markks" layoutX="29.0" layoutY="639.0" textFill="#fc0000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="ageLabel" layoutX="72.0" layoutY="137.0" textFill="#fc0000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="board1" layoutX="183.0" layoutY="377.0" textFill="#ee0b0b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="board2" layoutX="179.0" layoutY="559.0" textFill="#ee0b0b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLable" layoutX="77.0" layoutY="49.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="genLable" layoutX="84.0" layoutY="214.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="fnLable" layoutX="144.0" layoutY="725.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="mnLable" layoutX="147.0" layoutY="797.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="foLable" layoutX="433.0" layoutY="31.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="moLable" layoutX="435.0" layoutY="115.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="addrLable" layoutX="504.0" layoutY="217.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="backBtn" layoutX="1230.0" layoutY="26.0" mnemonicParsing="false" onAction="#backToHome" styleClass="back" stylesheets="@../css/BackBtn.css" text="Back">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

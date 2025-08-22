@@ -1,0 +1,14 @@
+/* Background white for the AnchorPane */
+.bannerPane {
+    -fx-background-color: darkslategrey;
+}
+
+/* Text white with black background for the university name */
+.uniName {
+    -fx-fill: white; /* text color */
+    -fx-background-color: black; /* text background */
+    -fx-padding: 5px; /* optional for spacing */
+}
+
+
+
