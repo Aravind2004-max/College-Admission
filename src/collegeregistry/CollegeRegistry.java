@@ -21,7 +21,7 @@ public class CollegeRegistry extends Application {
 
         stage.show();
     }
-
+    //comment
     public static void main(String[] args) {
         launch(args);
     }
